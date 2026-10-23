@@ -1,0 +1,50 @@
+@font-face{font-family:Manrope;src:url('assets/manrope-latin.woff2') format('woff2');font-weight:200 800;font-style:normal;font-display:block}
+:root{--blue:#2C418F;--site-blue:#26547F;--silver:#7D90B3;--navy:#0B1934;--ink:#182A45;--muted:#53647B;--soft:#F3F6FA;--pale:#DCE5F2}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1920px;height:1080px;overflow:hidden;background:var(--navy);font-family:Manrope,sans-serif;-webkit-font-smoothing:antialiased}
+#root{position:relative;width:1920px;height:1080px;overflow:hidden}
+.scene{position:absolute;inset:0;width:1920px;height:1080px;opacity:0;overflow:hidden;isolation:isolate}
+.scene:first-of-type{opacity:1}
+.light{background:var(--soft);color:var(--ink)}
+.dark{background:var(--navy);color:#FFFFFF}
+.scene-content{position:relative;z-index:1;width:100%;height:100%;padding:92px 104px;display:flex;flex-direction:column;gap:28px}
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center;flex:1;min-height:0}
+.copy{display:flex;flex-direction:column;gap:26px;min-width:0}
+.kicker{font-size:28px;font-weight:700;line-height:1.3;letter-spacing:.13em;text-transform:uppercase;color:var(--blue)}
+.dark .kicker{color:var(--pale)}
+.title{font-size:82px;line-height:1.07;letter-spacing:-.04em;font-weight:800;max-width:790px;overflow-wrap:normal}
+.body{font-size:32px;line-height:1.4;font-weight:500;max-width:790px;color:var(--muted)}
+.dark .body,.dark .footer-note{color:var(--pale)}
+.list{display:flex;flex-direction:column;gap:18px}
+.item{font-size:31px;line-height:1.28;font-weight:500;border-top:1px solid rgba(83,100,123,.25);padding-top:16px}
+.dark .item{border-color:rgba(220,229,242,.26)}
+.visual{width:780px;max-width:100%;height:640px;border-radius:28px;overflow:hidden;box-shadow:0 22px 60px rgba(11,25,52,.12);background:#FFFFFF;position:relative}
+.visual img.photo{display:block;width:100%;height:100%;object-fit:cover}
+.visual.portrait img.photo{object-fit:contain}
+.logo{display:block;max-width:100%;object-fit:contain;flex-shrink:0}
+.brand-panel{background:#FFFFFF;display:flex;align-items:center;justify-content:center;border-radius:20px;padding:16px;flex-shrink:0}
+.brand-panel img{max-width:100%;object-fit:contain;display:block}
+.tile-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;flex:1;min-height:0;align-content:center}
+.tile-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.tile{background:#FFFFFF;border:1px solid #DCE5F2;border-radius:24px;padding:32px;display:flex;flex-direction:column;gap:16px;color:var(--ink)}
+.tile h3{font-size:36px;line-height:1.18;font-weight:800;letter-spacing:-.025em}
+.tile p{font-size:28px;line-height:1.35;color:var(--muted);font-weight:500}
+.dark .tile{background:#142848;border-color:#304463;color:#FFFFFF}
+.dark .tile p{color:var(--pale)}
+.wide-title{font-size:96px;max-width:1600px;line-height:1.06;letter-spacing:-.045em;font-weight:800}
+.large-year{font-size:210px;line-height:1;letter-spacing:-.07em;font-weight:300;color:var(--blue);font-variant-numeric:tabular-nums}
+.footer-note{font-size:28px;line-height:1.35;color:var(--muted);font-weight:500}
+.tagline{font-size:46px;line-height:1.3;font-weight:500;letter-spacing:-.025em}
+.rule{width:100px;height:4px;background:var(--blue);flex-shrink:0}
+.dark .rule{background:var(--pale)}
+.header-row{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-shrink:0}
+.ambient{position:absolute;right:-120px;top:-240px;width:900px;height:900px;background:radial-gradient(circle,rgba(125,144,179,.13),rgba(125,144,179,0) 70%);z-index:0;pointer-events:none}
+.light .ambient{background:radial-gradient(circle,rgba(125,144,179,.09),rgba(125,144,179,0) 70%)}
+.chapter-bridge{background:#FFFFFF;color:var(--blue)}
+.chapter-bridge .scene-content{align-items:center;justify-content:center;gap:16px;padding:80px}
+.chapter-bridge .logo{width:570px;height:540px}
+.chapter-bridge .bridge-line{font-size:28px;letter-spacing:.15em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.outro .scene-content{align-items:center;justify-content:center;text-align:center;gap:40px}
+.outro .logo{width:600px;height:280px}
+.outro .wide-title{font-size:76px;letter-spacing:.025em}
+.outro .website{font-size:36px;font-weight:500;color:var(--pale)}

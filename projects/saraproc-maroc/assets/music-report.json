@@ -1,0 +1,75 @@
+{
+  "duration_seconds": 225.0,
+  "sample_rate": 48000,
+  "channels": 2,
+  "peak_dbfs": -2.548,
+  "clipped_samples": 0,
+  "tempo_bpm": 120,
+  "entry_times": [
+    20,
+    44,
+    60,
+    76,
+    92,
+    108,
+    126,
+    152,
+    166,
+    180,
+    194,
+    210
+  ],
+  "silence_seconds": 0.75,
+  "silence_checks": [
+    {
+      "end": 20,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 44,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 60,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 76,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 92,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 108,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 126,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 152,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 166,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 180,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 194,
+      "max_absolute_sample": 0.0
+    },
+    {
+      "end": 210,
+      "max_absolute_sample": 0.0
+    }
+  ],
+  "master_target_lufs": -16,
+  "original_synthesis": true
+}

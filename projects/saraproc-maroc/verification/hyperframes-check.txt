@@ -1,0 +1,34 @@
+
+> video-annimation-studio@1.0.0 hf
+> node scripts/hyperframes.mjs check projects/saraproc-maroc --at 4,13,19,25,36,43,48,55,59,64,71,75,80,87,91,96,103,107,112,120,125,130,138,146,151,155,161,165,169,175,179,183,189,193,197,205,209,215,223.5
+
+◆  Checking saraproc-maroc
+⚠  Check report was not recorded: ENOENT: no such file or directory, mkdir '/home/agent/.cache/hyperframes/history/1c57e0b1-96de-4f0b-9123-ccf76e7f4052'
+[hyperframes] browserGpuMode probe → software (WebGL renderer vendor="Google Inc. (Mesa)" renderer="ANGLE (Mesa, llvmpipe (LLVM 19.1.7 256 bits), OpenGL ES 3.2)")
+[SystemMemory] cgroup memory limit detected: 32768 MiB. It governs memory-adaptive render behaviour instead of host RAM.
+
+Lint
+  ⚠ composition_file_too_large: This HTML composition file has 594 lines. Smaller sub-compositions are easier to read, iterate on, and diff.
+    /workspace/video-annimation/projects/saraproc-maroc/index.html [data-composition-id] t=0s
+    Fix: Split coherent scenes or layers into separate .html files under compositions/, then mount them from the parent with data-composition-src so each file stays small enough to inspect, revise, and validate independently.
+  0 error(s), 1 warning(s), 0 info(s)
+
+Runtime
+  ◇ 0 errors, 0 warnings
+
+Layout
+  ◇ 0 issues across 39 sample(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 22/22 text checks pass WCAG AA
+
+Craft
+  ◇ 0 errors, 0 warnings
+
+Snapshots
+  ◇ disabled
+
+◇  Check passed

@@ -1,0 +1,11 @@
+{
+  "name": "saraproc-maroc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python3 scripts/build_film.py",
+    "dev": "node ../../scripts/hyperframes.mjs preview . --foreground --no-open",
+    "check": "node ../../scripts/hyperframes.mjs check .",
+    "render": "node ../../scripts/hyperframes.mjs render . --workers 2 --quality high --fps 30 --output ../../exports/saraproc-maroc.mp4"
+  }
+}
